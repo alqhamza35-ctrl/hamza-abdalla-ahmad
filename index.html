@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المهندس حمزة عبدالله | Software Engineer</title>
     
-    <meta name="description" content="الموقع الرسمي للمهندس حمزة عبدالله - مطور سوفت وير واعد وشغوف بتطوير الويب والذكاء الاصطناعي.">
+    <meta name="description" content="الموقع الرسمي للمهندس حمزة عبدالله - مطور سوفت وير ومحترف أدوات ذكاء اصطناعي (AI) واعد وشغوف بتطوير الويب حاصل على شهادات معتمدة من هواوي ووزارة الاتصالات.">
     <meta name="author" content="حمزة عبدالله">
-    <meta name="keywords" content="المهندس حمزة عبدالله, مطور سوفت وير, HTML, iSchool, Huawei, مبرمج صغير">
+    <meta name="keywords" content="المهندس حمزة عبدالله, مطور سوفت وير, محترف ذكاء اصطناعي, HTML, DEMI, iSchool, Huawei, هندسة برمجيات">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -30,9 +30,9 @@
 
     <div class="flex flex-col min-h-screen">
         
-        <div class="language-toggle fixed top-4 left-4 z-[90] flex items-center gap-2 bg-gray-900/80 backdrop-blur-md border border-gray-800 p-1.5 rounded-xl shadow-lg" role="group" aria-label="Language switcher">
-            <button id="lang-en-btn" onclick="toggleLanguage('en')" class="px-3 py-1 text-xs font-bold rounded-lg text-gray-400 hover:bg-gray-800 transition-all">EN</button>
-            <button id="lang-ar-btn" onclick="toggleLanguage('ar')" class="px-3 py-1 text-xs font-bold rounded-lg bg-blue-500 text-white transition-all shadow-sm">عربي</button>
+        <div class="language-toggle fixed top-4 left-4 z-[90] flex items-center gap-2 bg-gray-900/90 backdrop-blur-md border-2 border-gray-800 p-1.5 rounded-xl shadow-2xl" role="group" aria-label="Language switcher">
+            <button id="lang-ar-btn" onclick="toggleLanguage('ar')" class="px-4 py-1.5 text-xs font-bold rounded-lg bg-blue-500 text-white transition-all shadow-sm cursor-pointer">عربي</button>
+            <button id="lang-en-btn" onclick="toggleLanguage('en')" class="px-4 py-1.5 text-xs font-bold rounded-lg text-gray-400 hover:bg-gray-800 transition-all cursor-pointer">English أمريكي</button>
         </div>
 
         <nav id="navbar" role="navigation" aria-label="Main navigation" class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-900 transition-all duration-300">
@@ -44,40 +44,46 @@
                     <a href="#home" class="hover:text-blue-500 transition-colors" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
                     <a href="#skills" class="hover:text-blue-500 transition-colors" data-en="Skills" data-ar="المهارات التقنية">المهارات التقنية</a>
                     <a href="#certificates" class="hover:text-blue-500 transition-colors" data-en="Certificates" data-ar="الشهادات المهنية">الشهادات المهنية</a>
-                    <a href="#contact" class="px-4 py-2 bg-white text-gray-950 rounded-lg text-xs font-bold hover:bg-gray-100 transition-all" data-en="Connect" data-ar="تواصل معي">تواصل معي</a>
+                    <a href="#contact" class="hover:text-blue-500 transition-colors" data-en="Contact" data-ar="تواصل معي">تواصل معي</a>
                 </div>
             </div>
         </nav>
 
         <main id="main-content" class="flex-grow pt-16">
             
-            <section class="hero relative min-h-screen sm:h-screen flex items-start sm:items-center justify-center overflow-hidden bg-gray-950 -mt-20 pt-24 sm:pt-0" id="home">
+            <section class="hero relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950 -mt-20 pt-28 pb-16" id="home">
                 <div class="absolute inset-0" style="background-image: linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 64px 64px;" aria-hidden="true"></div>
                 <div class="absolute inset-0" style="background-image: radial-gradient(ellipse 90% 55% at 50% 0%, rgba(59,130,246,0.22) 0%, transparent 65%);" aria-hidden="true"></div>
 
                 <div class="hero-content container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
-                    <div class="text-center max-w-4xl mx-auto">
+                    <div class="text-center max-w-4xl mx-auto flex flex-col items-center">
+                        
+                        <div class="relative mb-6 group floating-element">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-600 rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="1000035502.png" alt="المهندس حمزة عبدالله" class="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-gray-900 object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105">
+                        </div>
+
                         <div class="flex justify-center mb-5">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-blue-400 bg-blue-950/40 rounded-full border border-blue-900/20">
                                 <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
-                                <span data-en="Passionate Software Student & Learner" data-ar="طالب وشغوف بدراسة هندسة السوفت وير">طالب وشغوف بدراسة هندسة السوفت وير</span>
+                                <span data-en="DEMI Scholar & AI Content Creator" data-ar="منحة وزارة الاتصالات وتكنولوجيا المعلومات - DEMI">منحة وزارة الاتصالات وتكنولوجيا المعلومات - DEMI</span>
                             </span>
                         </div>
 
-                        <p class="text-blue-400 font-medium mb-4 text-lg" data-en="Hi, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</p>
-                        <h1 class="text-5xl leading-tight sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-5 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent tracking-tight">
+                        <p class="text-blue-400 font-medium mb-3 text-lg" data-en="Hi, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</p>
+                        <h1 class="text-4xl leading-tight sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent tracking-tight">
                             المهندس حمزة عبدالله
                         </h1>
 
-                        <div class="h-10 sm:h-12 flex items-center justify-center mb-6">
-                            <span class="text-xl sm:text-2xl font-bold text-gray-200" data-en="Software & Smart Web Developer" data-ar="مطور سوفت وير وويب ذكي">مطور سوفت وير وويب ذكي</span>
+                        <div class="h-10 flex items-center justify-center mb-5">
+                            <span class="text-lg sm:text-xl font-bold text-gray-200" data-en="Software Developer & AI Power User" data-ar="مطور سوفت وير ومحترف أدوات ذكاء اصطناعي">مطور سوفت وير ومحترف أدوات ذكاء اصطناعي</span>
                         </div>
 
-                        <p class="hero-subtitle text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed font-medium" data-en="I am 12 years old, crafting my computational path with extreme logic frameworks." data-ar="عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف وبأدوات منطقية متطورة.">
-                            عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف وبأدوات منطقية متطورة.
+                        <p class="hero-subtitle text-base sm:text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed font-medium" data-en="I am 12 years old, designing code structures and leveraging AI frameworks to craft smart software paths." data-ar="عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف، مع دمج التقنيات المتطورة لتوظيف واستخدام أدوات الذكاء الاصطناعي بكفاءة ممتازة.">
+                            عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف، مع دمج التقنيات المتطورة لتوظيف واستخدام أدوات الذكاء الاصطناعي بكفاءة ممتازة.
                         </p>
 
-                        <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center z-10 relative">
+                        <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center z-10 relative w-full sm:w-auto">
                             <a href="#certificates" class="w-full sm:w-auto px-6 py-3 bg-white text-gray-950 rounded-xl font-bold shadow-lg hover:bg-gray-100 transition-all text-sm" data-en="Explore Certificates Board" data-ar="استكشاف لوحة الشهادات">
                                 استكشاف لوحة الشهادات
                             </a>
@@ -89,19 +95,19 @@
                 </div>
             </section>
 
-            <section class="py-16 bg-gray-900/40 border-y border-gray-900">
+            <section class="py-16 bg-gray-900/40 border-y border-gray-900 relative z-10">
                 <div class="container mx-auto px-4 max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     <div>
-                        <div class="text-3xl font-extrabold text-blue-500">12 سنة</div>
+                        <div class="text-3xl font-extrabold text-blue-500" data-en="12 Years" data-ar="12 سنة">12 سنة</div>
                         <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="Age Milestone" data-ar="العمر الحالي">العمر الحالي</div>
                     </div>
                     <div>
-                        <div class="text-3xl font-extrabold text-blue-500">5 شهادات</div>
+                        <div class="text-3xl font-extrabold text-blue-500" data-en="5 Certificates" data-ar="5 شهادات">5 شهادات</div>
                         <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="Verified Credentials" data-ar="الشهادات المعتمدة">الشهادات المعتمدة</div>
                     </div>
                     <div>
-                        <div class="text-3xl font-extrabold text-blue-500">متوسط متطور</div>
-                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="HTML Level" data-ar="مستوى الـ HTML">مستوى الـ HTML</div>
+                        <div class="text-3xl font-extrabold text-blue-500" data-en="Expert Level" data-ar="خبير استخدام">خبير استخدام</div>
+                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="AI Utilization" data-ar="مستوى الـ AI">مستوى الـ AI</div>
                     </div>
                     <div>
                         <div class="text-3xl font-extrabold text-blue-500">iSchool & Huawei</div>
@@ -110,12 +116,18 @@
                 </div>
             </section>
 
-            <section id="skills" class="py-16 bg-gray-950 border-b border-gray-900">
+            <section id="skills" class="py-16 bg-gray-950 border-b border-gray-900 relative z-10">
                 <div class="container mx-auto px-4 max-w-7xl">
                     <div class="text-center max-w-3xl mx-auto mb-16">
                         <h2 class="text-3xl font-bold tracking-tight mb-4" data-en="Technical Skillset Blueprint" data-ar="مخطط المهارات التقنية الحالية">مخطط المهارات التقنية الحالية</h2>
                     </div>
                     <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                        <div class="p-6 bg-gradient-to-b from-purple-950/30 to-gray-900/50 border border-purple-900/40 rounded-xl text-right relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-xl transition-all group-hover:bg-purple-500/20"></div>
+                            <div class="text-2xl mb-3">⚡🤖</div>
+                            <h3 class="font-bold text-lg text-purple-300 mb-2" data-en="Advanced AI & Prompt Engineering" data-ar="احتراف أدوات الذكاء الاصطناعي">احتراف أدوات الذكاء الاصطناعي</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed" data-en="Expert in utilizing AI models, prompt engineering, and building logic flows intelligently." data-ar="أمتلك قدرة ممتازة على استخدام وتوجيه أدوات وأنظمة الذكاء الاصطناعي (AI) بكفاءة عالية، وتوظيفها بذكاء في تطوير البرمجيات والتفكير المنطقي.">أمتلك قدرة ممتازة على استخدام وتوجيه أدوات وأنظمة الذكاء الاصطناعي (AI) بكفاءة عالية، وتوظيفها بذكاء في تطوير البرمجيات والتفكير المنطقي.</p>
+                        </div>
                         <div class="p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-right">
                             <div class="text-2xl mb-3">🌐</div>
                             <h3 class="font-bold text-lg text-white mb-2" data-en="HTML5 Web Structure" data-ar="هيكلة الويب عبر HTML5">هيكلة الويب عبر HTML5</h3>
@@ -126,16 +138,11 @@
                             <h3 class="font-bold text-lg text-white mb-2" data-en="Software & Logical Thinking" data-ar="هندسة السوفت وير والتفكير المنطقي">هندسة السوفت وير والتفكير المنطقي</h3>
                             <p class="text-gray-400 text-xs leading-relaxed" data-en="Deep baseline focus on building scripts and structures." data-ar="دراسة وفهم أسس السوفت وير، وكيفية بناء الأكواد البرمجية البرمجية المنطقية وحل الواجبات الذكية.">دراسة وفهم أسس السوفت وير، وكيفية بناء الأكواد البرمجية البرمجية المنطقية وحل الواجبات الذكية.</p>
                         </div>
-                        <div class="p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-right">
-                            <div class="text-2xl mb-3">🤖</div>
-                            <h3 class="font-bold text-lg text-white mb-2" data-en="AI & Digital Innovation Foundations" data-ar="مبادئ الذكاء الاصطناعي والابتكار">مبادئ الذكاء الاصطناعي والابتكار</h3>
-                            <p class="text-gray-400 text-xs leading-relaxed" data-en="Introduction to smart AI automation paths." data-ar="دراسة معمقة للمبادئ الأساسية للذكاء الاصطناعي والتفكير التصميمي والابتكار الرقمي المعتمد.">دراسة معمقة للمبادئ الأساسية للذكاء الاصطناعي والتفكير التصميمي والابتكار الرقمي المعتمد.</p>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="certificates" class="py-16 bg-gray-900/20 border-b border-gray-900">
+            <section id="certificates" class="py-16 bg-gray-900/20 border-b border-gray-900 relative z-10">
                 <div class="container mx-auto px-4 max-w-7xl">
                     <div class="text-center max-w-3xl mx-auto mb-16">
                         <h2 class="text-3xl font-bold tracking-tight mb-4" data-en="Professional Certificates Board" data-ar="لوحة الشهادات البرمجية المعتمدة">لوحة الشهادات البرمجية المعتمدة</h2>
@@ -144,67 +151,83 @@
                     
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                         
-                        <a href="https://drive.google.com/file/d/1GfYIk_BFeWC54Q5bbVV5TeA5ORnEgSPn/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group">
+                        <a href="https://drive.google.com/file/d/1GfYIk_BFeWC54Q5bbVV5TeA5ORnEgSPn/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group cursor-pointer">
                             <div>
                                 <div class="text-3xl mb-4">🌐</div>
-                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block">أكاديمية iSchool الدولية</span>
+                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block" data-en="iSchool International Academy" data-ar="أكاديمية iSchool الدولية">أكاديمية iSchool الدولية</span>
                                 <h3 class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors mb-2" data-en="Smart Web Development Graduate" data-ar="خريج تطوير الويب الذكي (Smart Web Development)">خريج تطوير الويب الذكي (Smart Web Development)</h3>
                             </div>
-                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1" data-en="Open Official Certificate via Drive ↗" data-ar="فتح الشهادة الرسمية عبر Drive ↗">فتح الشهادة الرسمية عبر Drive ↗</p>
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1fPIPMXTyVq71gSTaE4aHZi1saYV5V8J_/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group">
+                        <a href="https://drive.google.com/file/d/1fPIPMXTyVq71gSTaE4aHZi1saYV5V8J_/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group cursor-pointer">
                             <div>
                                 <div class="text-3xl mb-4">🏆</div>
-                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block">أكاديمية iSchool الدولية</span>
+                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block" data-en="iSchool International Academy" data-ar="أكاديمية iSchool الدولية">أكاديمية iSchool الدولية</span>
                                 <h3 class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors mb-2" data-en="Programming Excellence Certificate" data-ar="شهادة التميز البرمجي والابتكار الرقمي">شهادة التميز البرمجي والابتكار الرقمي</h3>
                             </div>
-                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1" data-en="Open Official Certificate via Drive ↗" data-ar="فتح الشهادة الرسمية عبر Drive ↗">فتح الشهادة الرسمية عبر Drive ↗</p>
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1iVTKONzxfqh6ZzxTfILJxi6c_7kZRZcD/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                        <a href="https://drive.google.com/file/d/1iVTKONzxfqh6ZzxTfILJxi6c_7kZRZcD/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group cursor-pointer">
                             <div>
                                 <div class="text-3xl mb-4">🤖</div>
-                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block" data-en="Huawei Global Corporation" data-ar="مؤسسة Huawei العالمية">مؤسسة Huawei العالمية</span>
                                 <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="Artificial Intelligence Core Training" data-ar="مبادئ الذكاء الاصطناعي (AI Core)">مبادئ الذكاء الاصطناعي (AI Core)</h3>
                             </div>
-                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1" data-en="Open Official Certificate via Drive ↗" data-ar="فتح الشهادة الرسمية عبر Drive ↗">فتح الشهادة الرسمية عبر Drive ↗</p>
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1MSzrhqkWqfRuWh-V4WG74JEwSo5q9LH4/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                        <a href="https://drive.google.com/file/d/1MSzrhqkWqfRuWh-V4WG74JEwSo5q9LH4/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group cursor-pointer">
                             <div>
                                 <div class="text-3xl mb-4">🧠</div>
-                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block" data-en="Huawei Global Corporation" data-ar="مؤسسة Huawei العالمية">مؤسسة Huawei العالمية</span>
                                 <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="Design Thinking & Digital Innovation" data-ar="التفكير التصميمي والابتكار الرقمي">التفكير التصميمي والابتكار الرقمي</h3>
                             </div>
-                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1" data-en="Open Official Certificate via Drive ↗" data-ar="فتح الشهادة الرسمية عبر Drive ↗">فتح الشهادة الرسمية عبر Drive ↗</p>
                         </a>
 
-                        <a href="https://drive.google.com/file/d/1f_Zsj9GsCCuP3d_SlXPTYWqVN0sY3Zxt/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                        <a href="https://drive.google.com/file/d/1f_Zsj9GsCCuP3d_SlXPTYWqVN0sY3Zxt/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group cursor-pointer">
                             <div>
                                 <div class="text-3xl mb-4">💻</div>
-                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block" data-en="Huawei Global Corporation" data-ar="مؤسسة Huawei العالمية">مؤسسة Huawei العالمية</span>
                                 <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="ICT Skills & Digital Citizenship" data-ar="مهارات تكنولوجيا المعلومات والمواطنة الرقمية">مهارات تكنولوجيا المعلومات والمواطنة الرقمية</h3>
                             </div>
-                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1" data-en="Open Official Certificate via Drive ↗" data-ar="فتح الشهادة الرسمية عبر Drive ↗">فتح الشهادة الرسمية عبر Drive ↗</p>
                         </a>
 
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="py-20 bg-gray-950 text-center">
-                <div class="container mx-auto px-4 max-w-3xl">
-                    <h2 class="text-3xl font-black mb-4 text-white" data-en="Let's Build the Future Software Together" data-ar="دعنا نبني برمجيات المستقبل معاً">دعنا نبني برمجيات المستقبل معاً</h2>
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <a href="#" class="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-sm shadow-md transition-all">إرسال رسالة برمجية</a>
+            <section id="contact" class="py-24 bg-gray-950 border-b border-gray-900 relative z-10">
+                <div class="container mx-auto px-4 max-w-4xl text-center">
+                    <h2 class="text-3xl font-black mb-4 text-white" data-en="Let's Connect & Work Together" data-ar="تواصل معي وقنوات الاتصال الرسمية">تواصل معي وقنوات الاتصال الرسمية</h2>
+                    <p class="text-gray-400 text-sm max-w-xl mx-auto mb-12 leading-relaxed" data-en="Feel free to reach out to me through my official email address or view my number." data-ar="مستعد دائماً للمشاركة في مشاريع السوفت وير والويب الذكي، يمكنك التواصل معي عبر الطرق التالية:">
+                        مستعد دائماً للمشاركة في مشاريع السوفت وير والويب الذكي، يمكنك التواصل معي عبر الطرق التالية:
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+                        
+                        <div class="flex flex-col items-center justify-center p-6 bg-slate-900/40 border border-gray-800 rounded-2xl shadow-md">
+                            <div class="text-4xl mb-3">📞</div>
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1" data-en="Phone Number" data-ar="رقم الهاتف">رقم الهاتف</span>
+                            <span class="text-sm text-gray-200 font-mono font-bold select-all">01022317002</span>
+                        </div>
+
+                        <a href="mailto:alqhamza35@gmail.com" class="flex flex-col items-center justify-center p-6 bg-red-950/20 border border-red-900/30 rounded-2xl hover:border-red-500 transition-all group shadow-md cursor-pointer">
+                            <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">✉️</div>
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-wider mb-1" data-en="Email Address" data-ar="البريد الإلكتروني">البريد الإلكتروني</span>
+                            <span class="text-xs text-gray-400 font-mono group-hover:text-red-300 transition-colors">alqhamza35@gmail.com</span>
+                        </a>
+
                     </div>
                 </div>
             </section>
 
         </main>
 
-        <footer class="bg-gray-950 text-gray-500 border-t border-gray-900 py-12 text-xs">
+        <footer class="bg-gray-950 text-gray-500 border-t border-gray-900 py-12 text-xs relative z-10">
             <div class="container mx-auto px-4 max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div data-en="&copy; 2026 Engineer Hamza Abdullah. All systems operational." data-ar="&copy; 2026 المهندس حمزة عبدالله. جميع الحقوق البرمجية محفوظة.">&copy; 2026 المهندس حمزة عبدالله. جميع الحقوق البرمجية محفوظة.</div>
             </div>
@@ -219,12 +242,16 @@
             if (lang === 'ar') {
                 htmlNode.setAttribute('dir', 'rtl'); htmlNode.setAttribute('lang', 'ar');
                 document.getElementById('lang-ar-btn').classList.add('bg-blue-500', 'text-white');
+                document.getElementById('lang-ar-btn').classList.remove('text-gray-400', 'hover:bg-gray-800');
                 document.getElementById('lang-en-btn').classList.remove('bg-blue-500', 'text-white');
+                document.getElementById('lang-en-btn').classList.add('text-gray-400', 'hover:bg-gray-800');
                 elements.forEach(el => { if (el.getAttribute('data-ar')) el.textContent = el.getAttribute('data-ar'); });
             } else {
                 htmlNode.setAttribute('dir', 'ltr'); htmlNode.setAttribute('lang', 'en');
                 document.getElementById('lang-en-btn').classList.add('bg-blue-500', 'text-white');
+                document.getElementById('lang-en-btn').classList.remove('text-gray-400', 'hover:bg-gray-800');
                 document.getElementById('lang-ar-btn').classList.remove('bg-blue-500', 'text-white');
+                document.getElementById('lang-ar-btn').classList.add('text-gray-400', 'hover:bg-gray-800');
                 elements.forEach(el => { if (el.getAttribute('data-en')) el.textContent = el.getAttribute('data-en'); });
             }
         }
