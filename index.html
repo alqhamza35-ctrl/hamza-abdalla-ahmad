@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-scroll-behavior="smooth" class="dark" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهندس حمزة عبدالله | Software Engineer</title>
+    
+    <meta name="description" content="الموقع الرسمي للمهندس حمزة عبدالله - مطور سوفت وير واعد وشغوف بتطوير الويب والذكاء الاصطناعي.">
+    <meta name="author" content="حمزة عبدالله">
+    <meta name="keywords" content="المهندس حمزة عبدالله, مطور سوفت وير, HTML, iSchool, Huawei, مبرمج صغير">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .skip-link:focus { transform: translateY(0); }
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
+        .floating-element { animation: float-slow 6s ease-in-out infinite; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-950 text-gray-100 selection:bg-blue-500/30 relative overflow-x-hidden">
+
+    <a href="#main-content" class="skip-link absolute top-0 left-4 -translate-y-full bg-blue-600 text-white px-4 py-2 rounded-b-lg text-sm font-semibold z-[100] transition-transform duration-200">
+        تخطي للمحتوى الرئيسي
+    </a>
+
+    <div id="scrollProgress" class="fixed top-0 right-0 h-1 bg-gradient-to-l from-blue-500 via-indigo-500 to-purple-500 z-[60] w-0 transition-all duration-77" aria-hidden="true"></div>
+
+    <div class="flex flex-col min-h-screen">
+        
+        <div class="language-toggle fixed top-4 left-4 z-[90] flex items-center gap-2 bg-gray-900/80 backdrop-blur-md border border-gray-800 p-1.5 rounded-xl shadow-lg" role="group" aria-label="Language switcher">
+            <button id="lang-en-btn" onclick="toggleLanguage('en')" class="px-3 py-1 text-xs font-bold rounded-lg text-gray-400 hover:bg-gray-800 transition-all">EN</button>
+            <button id="lang-ar-btn" onclick="toggleLanguage('ar')" class="px-3 py-1 text-xs font-bold rounded-lg bg-blue-500 text-white transition-all shadow-sm">عربي</button>
+        </div>
+
+        <nav id="navbar" role="navigation" aria-label="Main navigation" class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-900 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl h-16 flex items-center justify-between">
+                <a href="#" class="text-lg font-black tracking-tighter uppercase flex items-center gap-1 text-white">
+                    Eng. Hamza<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                </a>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                    <a href="#home" class="hover:text-blue-500 transition-colors" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    <a href="#skills" class="hover:text-blue-500 transition-colors" data-en="Skills" data-ar="المهارات التقنية">المهارات التقنية</a>
+                    <a href="#certificates" class="hover:text-blue-500 transition-colors" data-en="Certificates" data-ar="الشهادات المهنية">الشهادات المهنية</a>
+                    <a href="#contact" class="px-4 py-2 bg-white text-gray-950 rounded-lg text-xs font-bold hover:bg-gray-100 transition-all" data-en="Connect" data-ar="تواصل معي">تواصل معي</a>
+                </div>
+            </div>
+        </nav>
+
+        <main id="main-content" class="flex-grow pt-16">
+            
+            <section class="hero relative min-h-screen sm:h-screen flex items-start sm:items-center justify-center overflow-hidden bg-gray-950 -mt-20 pt-24 sm:pt-0" id="home">
+                <div class="absolute inset-0" style="background-image: linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 64px 64px;" aria-hidden="true"></div>
+                <div class="absolute inset-0" style="background-image: radial-gradient(ellipse 90% 55% at 50% 0%, rgba(59,130,246,0.22) 0%, transparent 65%);" aria-hidden="true"></div>
+
+                <div class="hero-content container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
+                    <div class="text-center max-w-4xl mx-auto">
+                        <div class="flex justify-center mb-5">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-blue-400 bg-blue-950/40 rounded-full border border-blue-900/20">
+                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                                <span data-en="Passionate Software Student & Learner" data-ar="طالب وشغوف بدراسة هندسة السوفت وير">طالب وشغوف بدراسة هندسة السوفت وير</span>
+                            </span>
+                        </div>
+
+                        <p class="text-blue-400 font-medium mb-4 text-lg" data-en="Hi, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</p>
+                        <h1 class="text-5xl leading-tight sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-5 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent tracking-tight">
+                            المهندس حمزة عبدالله
+                        </h1>
+
+                        <div class="h-10 sm:h-12 flex items-center justify-center mb-6">
+                            <span class="text-xl sm:text-2xl font-bold text-gray-200" data-en="Software & Smart Web Developer" data-ar="مطور سوفت وير وويب ذكي">مطور سوفت وير وويب ذكي</span>
+                        </div>
+
+                        <p class="hero-subtitle text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed font-medium" data-en="I am 12 years old, crafting my computational path with extreme logic frameworks." data-ar="عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف وبأدوات منطقية متطورة.">
+                            عمري 12 سنة، وأصنع طريقي البرمجي الخاص بشغف وبأدوات منطقية متطورة.
+                        </p>
+
+                        <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center z-10 relative">
+                            <a href="#certificates" class="w-full sm:w-auto px-6 py-3 bg-white text-gray-950 rounded-xl font-bold shadow-lg hover:bg-gray-100 transition-all text-sm" data-en="Explore Certificates Board" data-ar="استكشاف لوحة الشهادات">
+                                استكشاف لوحة الشهادات
+                            </a>
+                            <a href="#skills" class="w-full sm:w-auto px-6 py-3 bg-gray-900 text-gray-100 border border-gray-800 rounded-xl font-semibold hover:bg-gray-800/60 transition-all text-sm" data-en="Technical Skillset" data-ar="المهارات التقنية">
+                                المهارات التقنية
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-gray-900/40 border-y border-gray-900">
+                <div class="container mx-auto px-4 max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-extrabold text-blue-500">12 سنة</div>
+                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="Age Milestone" data-ar="العمر الحالي">العمر الحالي</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-blue-500">5 شهادات</div>
+                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="Verified Credentials" data-ar="الشهادات المعتمدة">الشهادات المعتمدة</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-blue-500">متوسط متطور</div>
+                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="HTML Level" data-ar="مستوى الـ HTML">مستوى الـ HTML</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-extrabold text-blue-500">iSchool & Huawei</div>
+                        <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mt-1" data-en="Training Context" data-ar="الجهات التعليمية">الجهات التعليمية</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="py-16 bg-gray-950 border-b border-gray-900">
+                <div class="container mx-auto px-4 max-w-7xl">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4" data-en="Technical Skillset Blueprint" data-ar="مخطط المهارات التقنية الحالية">مخطط المهارات التقنية الحالية</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                        <div class="p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-right">
+                            <div class="text-2xl mb-3">🌐</div>
+                            <h3 class="font-bold text-lg text-white mb-2" data-en="HTML5 Web Structure" data-ar="هيكلة الويب عبر HTML5">هيكلة الويب عبر HTML5</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed" data-en="I can write HTML code structure in an intermediate level." data-ar="أستطيع كتابة وتنسيق الأكواد الهيكلية لصفحات الويب بمستوى جيد جداً (متوسط متطور).">أستطيع كتابة وتنسيق الأكواد الهيكلية لصفحات الويب بمستوى جيد جداً (متوسط متطور).</p>
+                        </div>
+                        <div class="p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-right">
+                            <div class="text-2xl mb-3">💻</div>
+                            <h3 class="font-bold text-lg text-white mb-2" data-en="Software & Logical Thinking" data-ar="هندسة السوفت وير والتفكير المنطقي">هندسة السوفت وير والتفكير المنطقي</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed" data-en="Deep baseline focus on building scripts and structures." data-ar="دراسة وفهم أسس السوفت وير، وكيفية بناء الأكواد البرمجية البرمجية المنطقية وحل الواجبات الذكية.">دراسة وفهم أسس السوفت وير، وكيفية بناء الأكواد البرمجية البرمجية المنطقية وحل الواجبات الذكية.</p>
+                        </div>
+                        <div class="p-6 bg-gray-900/50 border border-gray-800 rounded-xl text-right">
+                            <div class="text-2xl mb-3">🤖</div>
+                            <h3 class="font-bold text-lg text-white mb-2" data-en="AI & Digital Innovation Foundations" data-ar="مبادئ الذكاء الاصطناعي والابتكار">مبادئ الذكاء الاصطناعي والابتكار</h3>
+                            <p class="text-gray-400 text-xs leading-relaxed" data-en="Introduction to smart AI automation paths." data-ar="دراسة معمقة للمبادئ الأساسية للذكاء الاصطناعي والتفكير التصميمي والابتكار الرقمي المعتمد.">دراسة معمقة للمبادئ الأساسية للذكاء الاصطناعي والتفكير التصميمي والابتكار الرقمي المعتمد.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificates" class="py-16 bg-gray-900/20 border-b border-gray-900">
+                <div class="container mx-auto px-4 max-w-7xl">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-3xl font-bold tracking-tight mb-4" data-en="Professional Certificates Board" data-ar="لوحة الشهادات البرمجية المعتمدة">لوحة الشهادات البرمجية المعتمدة</h2>
+                        <p class="text-gray-400 text-sm" data-en="Click on any certificate card to view it directly on Google Drive!" data-ar="اضغط على كارت أي شهادة من الـ 5 المكتوبين تحت عشان تفتح لك اللينك بتاعها عل طول وتشوفها بالحجم الكامل:">اضغط على كارت أي شهادة من الـ 5 المكتوبين تحت عشان تفتح لك اللينك بتاعها عل طول وتشوفها بالحجم الكامل:</p>
+                    </div>
+                    
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        
+                        <a href="https://drive.google.com/file/d/1GfYIk_BFeWC54Q5bbVV5TeA5ORnEgSPn/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group">
+                            <div>
+                                <div class="text-3xl mb-4">🌐</div>
+                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block">أكاديمية iSchool الدولية</span>
+                                <h3 class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors mb-2" data-en="Smart Web Development Graduate" data-ar="خريج تطوير الويب الذكي (Smart Web Development)">خريج تطوير الويب الذكي (Smart Web Development)</h3>
+                            </div>
+                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1fPIPMXTyVq71gSTaE4aHZi1saYV5V8J_/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-blue-500/50 flex flex-col justify-between group">
+                            <div>
+                                <div class="text-3xl mb-4">🏆</div>
+                                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1 block">أكاديمية iSchool الدولية</span>
+                                <h3 class="text-sm font-bold text-white group-hover:text-blue-400 transition-colors mb-2" data-en="Programming Excellence Certificate" data-ar="شهادة التميز البرمجي والابتكار الرقمي">شهادة التميز البرمجي والابتكار الرقمي</h3>
+                            </div>
+                            <p class="text-xs text-blue-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1iVTKONzxfqh6ZzxTfILJxi6c_7kZRZcD/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                            <div>
+                                <div class="text-3xl mb-4">🤖</div>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="Artificial Intelligence Core Training" data-ar="مبادئ الذكاء الاصطناعي (AI Core)">مبادئ الذكاء الاصطناعي (AI Core)</h3>
+                            </div>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1MSzrhqkWqfRuWh-V4WG74JEwSo5q9LH4/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                            <div>
+                                <div class="text-3xl mb-4">🧠</div>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="Design Thinking & Digital Innovation" data-ar="التفكير التصميمي والابتكار الرقمي">التفكير التصميمي والابتكار الرقمي</h3>
+                            </div>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1f_Zsj9GsCCuP3d_SlXPTYWqVN0sY3Zxt/view?usp=drivesdk" target="_blank" class="block border border-gray-900 bg-gray-950 p-6 rounded-2xl transition-all hover:border-purple-500/50 flex flex-col justify-between group">
+                            <div>
+                                <div class="text-3xl mb-4">💻</div>
+                                <span class="text-[10px] font-bold text-purple-400 uppercase tracking-widest mb-1 block">مؤسسة Huawei العالمية</span>
+                                <h3 class="text-sm font-bold text-white group-hover:text-purple-400 transition-colors mb-2" data-en="ICT Skills & Digital Citizenship" data-ar="مهارات تكنولوجيا المعلومات والمواطنة الرقمية">مهارات تكنولوجيا المعلومات والمواطنة الرقمية</h3>
+                            </div>
+                            <p class="text-xs text-purple-500/70 font-semibold mt-4 flex items-center gap-1">فتح الشهادة الرسمية عبر Drive ↗</p>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 bg-gray-950 text-center">
+                <div class="container mx-auto px-4 max-w-3xl">
+                    <h2 class="text-3xl font-black mb-4 text-white" data-en="Let's Build the Future Software Together" data-ar="دعنا نبني برمجيات المستقبل معاً">دعنا نبني برمجيات المستقبل معاً</h2>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <a href="#" class="w-full sm:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-sm shadow-md transition-all">إرسال رسالة برمجية</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-gray-950 text-gray-500 border-t border-gray-900 py-12 text-xs">
+            <div class="container mx-auto px-4 max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div data-en="&copy; 2026 Engineer Hamza Abdullah. All systems operational." data-ar="&copy; 2026 المهندس حمزة عبدالله. جميع الحقوق البرمجية محفوظة.">&copy; 2026 المهندس حمزة عبدالله. جميع الحقوق البرمجية محفوظة.</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            const htmlNode = document.documentElement;
+            if (lang === 'ar') {
+                htmlNode.setAttribute('dir', 'rtl'); htmlNode.setAttribute('lang', 'ar');
+                document.getElementById('lang-ar-btn').classList.add('bg-blue-500', 'text-white');
+                document.getElementById('lang-en-btn').classList.remove('bg-blue-500', 'text-white');
+                elements.forEach(el => { if (el.getAttribute('data-ar')) el.textContent = el.getAttribute('data-ar'); });
+            } else {
+                htmlNode.setAttribute('dir', 'ltr'); htmlNode.setAttribute('lang', 'en');
+                document.getElementById('lang-en-btn').classList.add('bg-blue-500', 'text-white');
+                document.getElementById('lang-ar-btn').classList.remove('bg-blue-500', 'text-white');
+                elements.forEach(el => { if (el.getAttribute('data-en')) el.textContent = el.getAttribute('data-en'); });
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const totalScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progressIndicator = document.getElementById('scrollProgress');
+            if (progressIndicator) progressIndicator.style.width = (totalScroll / scrollHeight) * 100 + '%';
+        });
+    </script>
+</body>
+</html>
